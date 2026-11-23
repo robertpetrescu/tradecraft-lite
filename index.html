@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Volt Electrical | Licensed Master Electricians &amp; EV Charger Specialists</title>
+  <meta name="description" content="Panel upgrades, recessed lighting, Level 2 EV chargers, and same-day troubleshooting — backed by upfront flat-rate pricing and a 5-year workmanship warranty." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Apex Volt Electrical",
+  "description": "Panel upgrades, recessed lighting, Level 2 EV chargers, and same-day troubleshooting \u2014 backed by upfront flat-rate pricing and a 5-year workmanship warranty.",
+  "telephone": "(512) 555-0148",
+  "email": "hello@apexvoltelectric.example",
+  "areaServed": "Austin, TX & Surrounding Suburbs",
+  "openingHours": "Mo-Sa 07:00-19:00"
+}</script>
+  <style>
+    :root {
+      --primary: #0F172A;
+      --primary-2: #1E293B;
+      --accent: #F59E0B;
+      --accent-hover: #D97706;
+      --accent-text: #0F172A;
+      --soft-bg: #FFFBEB;
+      --soft-border: #FDE68A;
+      --badge-bg: rgba(245, 158, 11, 0.16);
+      --badge-text: #FCD34D;
+      --text: #0F172A;
+      --muted: #475569;
+      --bg: #FFFFFF;
+      --surface: #F8FAFC;
+      --border: #E2E8F0;
+      --radius: 14px;
+      --shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text); background: var(--bg); line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { width: 100%; max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+
+    .demo-bar {
+      background: #090D16; color: #E2E8F0; font-size: 0.84rem;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+    .demo-bar-inner {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px;
+      padding-top: 9px; padding-bottom: 9px;
+    }
+    .demo-bar strong { color: var(--accent); }
+    .demo-bar a {
+      background: var(--accent); color: var(--accent-text); text-decoration: none;
+      font-weight: 800; padding: 5px 12px; border-radius: 7px; font-size: 0.8rem;
+    }
+
+    .navbar {
+      position: sticky; top: 0; z-index: 40;
+      background: rgba(255,255,255,0.96); backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 74px; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--primary); font-weight: 800; font-size: 1.06rem; letter-spacing: -0.02em; }
+    .brand-mark { width: 40px; height: 40px; border-radius: 10px; background: var(--primary); color: var(--accent); display: grid; place-items: center; flex-shrink: 0; }
+    .brand-mark svg { width: 22px; height: 22px; }
+    .brand-sub { display: block; font-size: 0.72rem; font-weight: 600; color: var(--muted); }
+    .nav-links { display: flex; align-items: center; gap: 24px; }
+    .nav-links a { text-decoration: none; color: var(--muted); font-weight: 600; font-size: 0.92rem; }
+    .nav-links a:hover { color: var(--primary); }
+    .nav-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--primary); color: #FFF !important;
+      padding: 10px 18px; border-radius: 10px; font-weight: 700; font-size: 0.92rem;
+      text-decoration: none; white-space: nowrap;
+    }
+
+    .hero {
+      background: radial-gradient(circle at 85% 15%, var(--primary-2) 0%, var(--primary) 65%);
+      color: #FFF; padding: 62px 0 74px;
+    }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 40px; align-items: center; }
+    .location-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--badge-bg); color: var(--badge-text);
+      padding: 6px 14px; border-radius: 999px; font-size: 0.82rem; font-weight: 700;
+      margin-bottom: 16px; border: 1px solid rgba(255,255,255,0.12);
+    }
+    .hero h1 { font-size: clamp(2rem, 4vw, 3.1rem); line-height: 1.12; letter-spacing: -0.03em; font-weight: 800; margin-bottom: 16px; }
+    .hero-sub { font-size: 1.06rem; color: rgba(255,255,255,0.85); max-width: 560px; margin-bottom: 24px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 24px; }
+    .btn-primary {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      background: var(--accent); color: var(--accent-text);
+      padding: 14px 24px; border-radius: 12px; font-weight: 800; font-size: 0.98rem;
+      text-decoration: none; border: none; cursor: pointer;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2); transition: background 0.15s, transform 0.15s;
+    }
+    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
+    .btn-ghost {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      background: rgba(255,255,255,0.1); color: #FFF;
+      padding: 14px 20px; border-radius: 12px; font-weight: 700; font-size: 0.96rem;
+      text-decoration: none; border: 1px solid rgba(255,255,255,0.22);
+    }
+    .trust-strip { display: flex; flex-wrap: wrap; gap: 10px; }
+    .trust-pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 0.8rem; font-weight: 600; color: rgba(255,255,255,0.92);
+      background: rgba(255,255,255,0.08); padding: 6px 12px; border-radius: 8px;
+    }
+    .trust-pill svg { color: var(--accent); }
+
+    .quote-card { background: #FFF; color: var(--text); border-radius: 18px; padding: 26px; box-shadow: 0 24px 60px rgba(0,0,0,0.26); }
+    .quote-card h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: 4px; color: var(--primary); }
+    .quote-sub { font-size: 0.87rem; color: var(--muted); margin-bottom: 16px; }
+    .form-group { margin-bottom: 12px; }
+    .form-group label { display: block; font-size: 0.81rem; font-weight: 700; margin-bottom: 5px; color: var(--primary); }
+    .form-group input, .form-group textarea {
+      width: 100%; padding: 10px 12px; border-radius: 10px;
+      border: 1.5px solid var(--border); font: inherit; font-size: 0.93rem;
+    }
+    .form-group textarea { resize: vertical; min-height: 74px; }
+    .form-note { font-size: 0.76rem; color: var(--muted); text-align: center; margin-top: 10px; }
+    .form-success { display: none; background: #ECFDF5; border: 1px solid #A7F3D0; color: #065F46; padding: 12px; border-radius: 10px; font-size: 0.88rem; font-weight: 600; margin-top: 12px; }
+
+    .stats-band { background: var(--surface); border-bottom: 1px solid var(--border); padding: 26px 0; }
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .stat-card { background: #FFF; border: 1px solid var(--border); border-radius: 12px; padding: 18px 14px; text-align: center; }
+    .stat-val { font-size: 1.5rem; font-weight: 800; color: var(--primary); }
+    .stat-lbl { font-size: 0.82rem; color: var(--muted); font-weight: 600; margin-top: 3px; }
+
+    section.block { padding: 72px 0; }
+    .section-head { text-align: center; max-width: 650px; margin: 0 auto 42px; }
+    .eyebrow {
+      display: inline-block; font-size: 0.76rem; font-weight: 800; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--primary); background: var(--soft-bg);
+      border: 1px solid var(--soft-border); padding: 5px 12px; border-radius: 999px; margin-bottom: 12px;
+    }
+    .section-head h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); font-weight: 800; letter-spacing: -0.025em; color: var(--primary); margin-bottom: 10px; }
+    .section-head p { color: var(--muted); }
+
+    .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .service-card {
+      background: #FFF; border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 26px; display: flex; flex-direction: column; transition: transform 0.16s, box-shadow 0.16s, border-color 0.16s;
+    }
+    .service-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--accent); }
+    .service-icon { width: 44px; height: 44px; border-radius: 11px; background: var(--soft-bg); border: 1px solid var(--soft-border); color: var(--primary); display: grid; place-items: center; margin-bottom: 14px; }
+    .service-icon svg { width: 22px; height: 22px; }
+    .service-card h3 { font-size: 1.14rem; font-weight: 800; color: var(--primary); margin-bottom: 8px; }
+    .service-card p { color: var(--muted); font-size: 0.94rem; margin-bottom: 14px; flex: 1; }
+    .service-price { display: inline-block; align-self: flex-start; font-size: 0.78rem; font-weight: 700; color: var(--primary); background: var(--soft-bg); border: 1px solid var(--soft-border); padding: 4px 10px; border-radius: 999px; }
+
+    .why-section { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .why-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 38px; align-items: center; }
+    .why-list { list-style: none; display: grid; gap: 14px; margin-top: 20px; }
+    .why-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 0.96rem; font-weight: 500; }
+    .check-circle { width: 26px; height: 26px; border-radius: 50%; flex-shrink: 0; background: var(--primary); color: var(--accent); display: grid; place-items: center; margin-top: 2px; }
+    .areas-wrap { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+    .area-chip { font-size: 0.8rem; font-weight: 700; color: var(--primary); background: #FFF; border: 1px solid var(--border); padding: 5px 11px; border-radius: 8px; }
+
+    .guarantee-box { background: var(--primary); color: #FFF; border-radius: 18px; padding: 32px; box-shadow: var(--shadow); }
+    .guarantee-badge { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); font-weight: 800; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 12px; }
+    .guarantee-box h3 { font-size: 1.45rem; font-weight: 800; margin-bottom: 10px; line-height: 1.25; }
+    .guarantee-box p { color: rgba(255,255,255,0.82); margin-bottom: 20px; font-size: 0.95rem; }
+    .hours-row { display: inline-flex; align-items: center; gap: 7px; font-size: 0.84rem; color: rgba(255,255,255,0.75); margin-bottom: 18px; }
+    .direct-line { display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); padding: 14px 16px; border-radius: 12px; text-decoration: none; color: #FFF; font-weight: 800; font-size: 1.08rem; }
+    .direct-line span { display: inline-flex; align-items: center; gap: 9px; }
+
+    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .review-card { background: #FFF; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
+    .stars { color: #F59E0B; display: flex; gap: 2px; margin-bottom: 12px; }
+    .review-text { font-size: 0.94rem; color: var(--text); margin-bottom: 14px; }
+    .review-author { font-size: 0.82rem; color: var(--muted); }
+
+    .faq-list { max-width: 780px; margin: 0 auto; display: grid; gap: 12px; }
+    .faq-item { background: #FFF; border: 1px solid var(--border); border-radius: 12px; padding: 17px 20px; }
+    .faq-item summary { font-weight: 700; font-size: 1rem; color: var(--primary); cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .faq-item summary::after { content: "+"; font-size: 1.3rem; color: var(--muted); }
+    .faq-item[open] summary::after { content: "−"; }
+    .faq-item p { margin-top: 10px; color: var(--muted); font-size: 0.94rem; }
+
+    .cta-band { background: var(--primary); color: #FFF; padding: 54px 0; text-align: center; }
+    .cta-band h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 10px; }
+    .cta-band p { color: rgba(255,255,255,0.82); margin-bottom: 22px; max-width: 540px; margin-left: auto; margin-right: auto; }
+    footer { background: #090F1A; color: #94A3B8; padding: 30px 0 88px; font-size: 0.86rem; }
+    .footer-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+    footer a { color: #E2E8F0; text-decoration: none; }
+
+    .mobile-bar { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 50; background: #FFF; border-top: 1px solid var(--border); padding: 10px 14px; gap: 10px; box-shadow: 0 -8px 24px rgba(15,23,42,0.1); }
+    .mobile-bar a { flex: 1; padding: 12px 10px; font-size: 0.9rem; border-radius: 10px; }
+
+    @media (max-width: 900px) {
+      .hero-grid, .why-grid, .reviews-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .services-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding: 40px 0 50px; }
+      .mobile-bar { display: flex; }
+      .nav-cta { padding: 9px 13px; font-size: 0.84rem; }
+    }
+    @media (min-width: 641px) { footer { padding-bottom: 30px; } }
+  </style>
+</head>
+<body>
+  
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
+        <span>Apex Volt Electric<span class="brand-sub">Austin, TX</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="nav-cta" href="tel:+15125550148"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (512) 555-0148</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="location-tag">Serving Austin, TX &amp; Surrounding Suburbs</div>
+          <h1>Fast, Licensed Electrical Service in Austin, TX</h1>
+          <p class="hero-sub">Panel upgrades, recessed lighting, Level 2 EV chargers, and same-day troubleshooting — backed by upfront flat-rate pricing and a 5-year workmanship warranty.</p>
+          <div class="hero-actions">
+            <a class="btn-primary" href="tel:+15125550148"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call (512) 555-0148</a>
+            <a class="btn-ghost" href="#services">View Services <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+          <div class="trust-strip"><span class="trust-pill"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Licensed &amp; Insured</span><span class="trust-pill"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Same-Day Service</span><span class="trust-pill"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Upfront Flat Pricing</span><span class="trust-pill"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 5-Year Warranty</span></div>
+        </div>
+        <div class="quote-card" id="quote">
+          <h2>Get Your Free Estimate</h2>
+          <p class="quote-sub">Fast, upfront quote with zero obligation.</p>
+          <form name="estimate-electrician" method="POST" data-netlify="true" onsubmit="return handleQuote(event)">
+            <input type="hidden" name="form-name" value="estimate-electrician" />
+            <div class="form-group"><label for="q-name">Your Name</label><input id="q-name" name="name" type="text" placeholder="Alex Morgan" required /></div>
+            <div class="form-group"><label for="q-phone">Phone Number</label><input id="q-phone" name="phone" type="tel" placeholder="(512) 555-0148" required /></div>
+            <div class="form-group"><label for="q-msg">Project Details</label><textarea id="q-msg" name="details" placeholder="Tell us what you need help with..." required></textarea></div>
+            <button type="submit" class="btn-primary" style="width:100%;">Request Free Estimate <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+            <p class="form-note">Direct phone: <a href="tel:+15125550148" style="color:var(--primary);font-weight:700;">(512) 555-0148</a></p>
+            <div class="form-success" id="qSuccess">Request received! We will call you back promptly.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-band"><div class="container stats-grid"><div class="stat-card"><div class="stat-val">15+ Yrs</div><div class="stat-lbl">Master Electrician Experience</div></div><div class="stat-card"><div class="stat-val">4.9★</div><div class="stat-lbl">Average Customer Rating</div></div><div class="stat-card"><div class="stat-val">Same-Day</div><div class="stat-lbl">Troubleshooting Dispatch</div></div><div class="stat-card"><div class="stat-val">5-Year</div><div class="stat-lbl">Workmanship Warranty</div></div></div></section>
+
+    <section class="block" id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Services</span>
+          <h2>Complete Solutions for Austin, TX Homes &amp; Businesses</h2>
+          <p>Clean workmanship, transparent upfront pricing, and dependable local scheduling.</p>
+        </div>
+        <div class="services-grid"><article class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+          <h3>200A Panel Upgrades &amp; Heavy-Ups</h3>
+          <p>Safely modernize outdated breaker boxes to handle EVs, HVAC, and modern kitchen loads.</p>
+          <span class="service-price">Code-Compliant</span>
+        </article><article class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+          <h3>EV Charger Installation</h3>
+          <p>Tesla Wall Connector and universal Level 2 home charger installs with clean conduit routing.</p>
+          <span class="service-price">1-Day Install</span>
+        </article><article class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+          <h3>Recessed &amp; LED Lighting</h3>
+          <p>Warm dimmable canless LED upgrades, under-cabinet strips, and outdoor security lighting.</p>
+          <span class="service-price">Free Layout Quote</span>
+        </article><article class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+          <h3>Troubleshooting &amp; Emergency Repairs</h3>
+          <p>Fast diagnosis for tripping breakers, dead outlets, flickering lights, and surge protection.</p>
+          <span class="service-price">Same-Day</span>
+        </article></div>
+      </div>
+    </section>
+
+    <section class="block why-section" id="why-us">
+      <div class="container why-grid">
+        <div>
+          <span class="eyebrow">Why Choose Apex Volt Electric</span>
+          <h2 style="font-size:clamp(1.6rem,3vw,2.25rem);font-weight:800;color:var(--primary);line-height:1.2;">Local Pros Who Show Up On Time</h2>
+          <ul class="why-list"><li><span class="check-circle"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>Master Electrician on every panel upgrade and complex troubleshooting call.</span></li><li><span class="check-circle"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>Written flat-rate quote approved by you before a single wire is touched.</span></li><li><span class="check-circle"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>Shoe covers, drop cloths, and spotless cleanup on every home visit.</span></li><li><span class="check-circle"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>Permits pulled and inspections coordinated end-to-end.</span></li></ul>
+          <div class="areas-wrap"><span class="area-chip">Austin</span><span class="area-chip">Round Rock</span><span class="area-chip">Cedar Park</span><span class="area-chip">Pflugerville</span><span class="area-chip">Lakeway</span><span class="area-chip">Buda</span></div>
+        </div>
+        <div class="guarantee-box">
+          <div class="guarantee-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> Workmanship Guarantee</div>
+          <h3>Need service this week?</h3>
+          <p>Speak directly with our local team serving Austin, TX &amp; Surrounding Suburbs. Clear written estimates before any work begins.</p>
+          <div class="hours-row"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Mon–Sat: 7:00 AM – 7:00 PM · 24/7 Emergency</div>
+          <a class="direct-line" href="tel:+15125550148"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (512) 555-0148</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Customer Feedback</span>
+          <h2>Trusted by Local Homeowners</h2>
+        </div>
+        <div class="reviews-grid"><article class="review-card">
+          <div class="stars" aria-label="5 out of 5 stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+          <p class="review-text">&ldquo;Installed our 200A panel and Tesla charger in one day. Cleanest wiring work our inspector had ever seen.&rdquo;</p>
+          <div class="review-author"><strong>Marcus D.</strong> &middot; <span>Austin</span></div>
+        </article><article class="review-card">
+          <div class="stars" aria-label="5 out of 5 stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+          <p class="review-text">&ldquo;Fixed a mystery kitchen circuit outage in 30 minutes and charged the exact quote we agreed on.&rdquo;</p>
+          <div class="review-author"><strong>Hannah R.</strong> &middot; <span>Round Rock</span></div>
+        </article><article class="review-card">
+          <div class="stars" aria-label="5 out of 5 stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+          <p class="review-text">&ldquo;Added 14 recessed LED lights across our living room and kitchen — zero drywall mess.&rdquo;</p>
+          <div class="review-author"><strong>David K.</strong> &middot; <span>Cedar Park</span></div>
+        </article></div>
+      </div>
+    </section>
+
+    <section class="block" id="faq" style="background:var(--surface);border-top:1px solid var(--border);">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">FAQ</span><h2>Common Questions</h2></div>
+        <div class="faq-list"><details class="faq-item">
+          <summary>Do you pull permits for panel upgrades and EV chargers?</summary>
+          <p>Yes. We handle all local electrical permits and coordinate final city inspection so your home stays 100% code-compliant.</p>
+        </details><details class="faq-item">
+          <summary>Do you charge by the hour or flat rate?</summary>
+          <p>We provide clear, upfront flat-rate pricing before starting work so there are never surprise hourly bills.</p>
+        </details><details class="faq-item">
+          <summary>Can you come out for small jobs like one outlet or ceiling fan?</summary>
+          <p>Absolutely — no job is too small. Call or submit the quick form for fast scheduling.</p>
+        </details></div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <h2>Ready for a Fast, Upfront Quote?</h2>
+        <p>Call Apex Volt Electrical today or send a 30-second request above.</p>
+        <a class="btn-primary" href="tel:+15125550148"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call (512) 555-0148</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>&copy; 2026 Apex Volt Electrical. All rights reserved.</div>
+      <div><a href="tel:+15125550148">(512) 555-0148</a> &middot; <a href="mailto:hello@apexvoltelectric.example">hello@apexvoltelectric.example</a></div>
+    </div>
+  </footer>
+
+  <div class="mobile-bar">
+    <a class="btn-primary" href="tel:+15125550148"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call Now</a>
+    <a class="nav-cta" style="justify-content:center;" href="#quote">Free Quote</a>
+  </div>
+
+  <script>
+    function handleQuote(e) {
+      e.preventDefault();
+      var el = document.getElementById('qSuccess');
+      if (el) el.style.display = 'block';
+      e.target.reset();
+      return false;
+    }
+  </script>
+</body>
+</html>
